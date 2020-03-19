@@ -1,0 +1,36 @@
+* About
+
+Klausies is a program used to submit "listens" (or "scrobbles") to various
+music logging services, such as [[https://listenbrainz.org][ListenBrainz]] or [[https://last.fm][Last.FM]].
+
+** Supported Services
+   - [X] ListenBrainz
+   - [ ] Last.FM
+   - [ ] Libre.FM
+
+* Usage
+1. Follow the appropriate instructions to install Klausies by visiting our wiki.
+
+2. On first startup, Klausies creates an empty config file at
+   =$XDG_CONFIG_HOME/klausies/config.toml= (this is usually
+   =~/.config/klausies/config.toml=). Please edit it with your ListenBrainz
+   and/or Last.FM token.
+
+3. If installed as a Systemd unit, run =systemctl --user enable --now klausies=.
+   If not, run =klausies --daemon= and close your terminal.
+
+4. Listen to some music and if everything is correct, you should see your
+   listens being submitted to the appropriate services :)
+
+
+* Building
+
+1. [[https://www.rust-lang.org/tools/install][Install Rust]]
+2. Clone the project
+3. Run =cargo build --release=
+
+
+* Contributing
+
+Issues and pull requests are more than welcome. Feel free to open one if you
+need help or wish to contribute.
