@@ -26,3 +26,7 @@ jobs:
           use-cross: true
           command: build
           args: --release --target=${{ matrix.target }}
+      - uses: actions/upload-artifact@v1.0.0
+        with:
+          name: klausies
+          path: ./target/release/klausies
