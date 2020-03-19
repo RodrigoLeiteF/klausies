@@ -26,6 +26,8 @@ jobs:
       - name: Install openssl
         run: sudo apt-get install libssl-dev
       - uses: actions-rs/cargo@v1
+        env:
+          OPENSSL_DIR: "/usr/include/openssl"
         with:
           use-cross: true
           command: build
