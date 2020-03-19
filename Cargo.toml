@@ -11,7 +11,6 @@ clap = { git = "https://github.com/clap-rs/clap/" }
 xdg = "^2.1"
 serde = { version = "1.0", features = ["derive"] }
 toml = "0.5.6"
-mpris = "*"
 mpd = "*"
 time = "0.2.9"
 reqwest = { version = "0.10.0-alpha.2", features = ["blocking"] }
