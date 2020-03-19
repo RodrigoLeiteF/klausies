@@ -1,5 +1,5 @@
 [package]
-name = "scrabbler"
+name = "klausies"
 version = "0.1.0"
 authors = ["Rodrigo Leite <rodrigo@leite.dev>"]
 edition = "2018"
