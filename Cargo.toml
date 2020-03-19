@@ -1,0 +1,21 @@
+[package]
+name = "scrabbler"
+version = "0.1.0"
+authors = ["Rodrigo Leite <rodrigo@leite.dev>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+clap = { git = "https://github.com/clap-rs/clap/" }
+xdg = "^2.1"
+serde = { version = "1.0", features = ["derive"] }
+toml = "0.5.6"
+mpris = "*"
+mpd = "*"
+time = "0.2.9"
+reqwest = { version = "0.10.0-alpha.2", features = ["blocking"] }
+serde_json = "1.0.48"
+chrono = "0.4.11"
+log = "0.4.8"
+env_logger = "0.7.1"
