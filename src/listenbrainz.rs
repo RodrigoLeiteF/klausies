@@ -10,7 +10,7 @@ pub struct Client {
 }
 
 impl Client {
-    pub fn new(token: String) -> Result<Self, Box<std::error::Error>> {
+    pub fn new(token: String) -> Result<Self, Box<dyn std::error::Error>> {
         Ok(Client {
             http_client: Client::create_http_client(&token)?,
             token,
@@ -50,7 +50,7 @@ impl Client {
         Ok(())
     }
 
-    pub fn create_http_client(token: &str) -> Result<HttpClient, Box<std::error::Error>> {
+    pub fn create_http_client(token: &str) -> Result<HttpClient, Box<dyn std::error::Error>> {
         let token_header = format!("Token {}", token);
 
         let mut headers = header::HeaderMap::new();
