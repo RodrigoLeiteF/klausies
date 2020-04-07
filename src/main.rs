@@ -5,12 +5,7 @@ extern crate env_logger;
 use chrono;
 use clap::Clap;
 use serde::{Deserialize, Serialize};
-use std::fs;
-use std::path::PathBuf;
-use std::thread;
-use std::time::{Duration, Instant};
-use toml;
-use xdg::BaseDirectories;
+use std::time::Duration;
 
 mod config;
 mod listenbrainz;
