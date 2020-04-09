@@ -9,7 +9,7 @@ pub fn parse(path: &PathBuf) -> Config {
     let config: Config = toml::from_str(&data).expect("Could not parse config file");
 
     match config.listenbrainz {
-        None => panic!("No listenbrainz token found"),
+        None => panic!("No listenbrainz token found. Please run `klausies config`."),
         _ => (),
     }
 
@@ -17,7 +17,7 @@ pub fn parse(path: &PathBuf) -> Config {
 }
 
 pub fn get_or_create_config_file(path: Option<String>) -> PathBuf {
-    let xdg_dirs = BaseDirectories::with_prefix("scrabbler").unwrap();
+    let xdg_dirs = BaseDirectories::with_prefix("klausies").unwrap();
 
     if let Some(dir) = path {
         let path = PathBuf::from(dir);
