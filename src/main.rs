@@ -107,7 +107,7 @@ fn get_mpd_url(config: Option<MpdConfig>) -> String {
         Some(config) => {
             let url = config.url.unwrap_or("127.0.0.1".to_owned());
             let port = config.port.unwrap_or(6600);
-            format!("{url}{port}", url = url, port = port)
+            format!("{url}:{port}", url = url, port = port)
         }
         None => "127.0.0.1:6600".to_owned(),
     }
