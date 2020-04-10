@@ -23,6 +23,17 @@ music logging services, such as [[https://listenbrainz.org][ListenBrainz]] or [[
    listens being submitted to the appropriate services :)
 
 
+* Installing
+
+** Arch Linux
+
+Klausies can be found on the AUR under the name =klausies-git=. Tl;dr =yay -S klausies-git=
+
+** Everywhere else
+
+Download or compile your own binary and place it on =/usr/bin=. Optionally, copy
+=klausies.service= to =/usr/lib/systemd/user= to use it as a systemd unit.
+
 * Building
 
 1. [[https://www.rust-lang.org/tools/install][Install Rust]]
