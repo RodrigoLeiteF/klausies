@@ -47,7 +47,9 @@ impl Default for Config {
     fn default() -> Self {
         Config {
             last_fm: None,
-            listenbrainz: None,
+            listenbrainz: Some(ListenbrainzConfig {
+                token: "".to_owned(),
+            }),
             mpd: Some(MpdConfig {
                 password: None,
                 port: Some(6600),
