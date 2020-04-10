@@ -17,7 +17,6 @@ music logging services, such as [[https://listenbrainz.org][ListenBrainz]] or [[
    and/or Last.FM token.
 
 3. If installed as a Systemd unit, run =systemctl --user enable --now klausies=.
-   If not, run =klausies --daemon= and close your terminal.
 
 4. Listen to some music and if everything is correct, you should see your
    listens being submitted to the appropriate services :)
